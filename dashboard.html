@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AST-31696 Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard">
+  <div id="bug" class="bug" hidden>
+    <h1>BUG REPRODUCED</h1>
+    <p>This dashboard is loaded as the whole page. The menu and its <code>open=</code> parameter are gone.</p>
+  </div>
+
+  <h2 id="name">Dashboard</h2>
+  <div><b>My address:</b> <code id="url"></code></div>
+
+  <p>
+    <button id="replace" type="button">Change time range (replaceState)</button>
+    <button id="push" type="button">View panel (pushState)</button>
+  </p>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

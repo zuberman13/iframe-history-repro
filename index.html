@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AST-31696 Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="menu">
+  <header>
+    <h1>MENU PAGE</h1>
+    <p class="hint">Pick a dashboard, wait for its address to update, then refresh the browser.
+      This page should still show the menu, with <code>open=</code> in its address.</p>
+  </header>
+
+  <nav id="links"></nav>
+
+  <section class="status">
+    <div><b>This page's address:</b> <code id="topUrl"></code></div>
+    <div><b>Dashboard frame's address:</b> <code id="frameUrl">(none)</code></div>
+  </section>
+
+  <iframe id="dash" title="Dashboard"></iframe>
+
+  <section class="status">
+    <b>Address changes (both frames):</b>
+    <ol id="log"></ol>
+  </section>
+
+  <script src="menu.js"></script>
+</body>
+</html>
